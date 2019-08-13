@@ -1,0 +1,224 @@
+body {
+    color: #fff;
+    font-size: 100%;
+}
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*タイトルです*/
+
+.title {
+    left: 0;
+    right: 0;
+    text-align: left;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title:before {
+    content: "";
+    background: linear-gradient(-45deg, rgba(246, 255, 0, .7), rgba(255, 0, 161, .7)), url(../imgs/IMG_6335.JPG);
+    background-position: center center;
+    position-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}
+
+.title h1 {
+    font-size: 5rem;
+    position: relative;
+    letter-spacing: 0.2em;
+    padding-top: 17rem;
+    padding-left: 0.8em;
+}
+/*タイトル終了*/
+
+/*droid*/
+.typo1 {
+    background-color: #ffffea;
+    color: #a4c639;
+    height: 100vh;
+    width: 100vw;
+    font-size: 5em;
+    line-height: 10rem;
+}
+
+.typo1 p {
+    float: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.typo1 img {
+    width: 20rem;
+    display: block;
+    padding-top: 2em;
+    padding-left: 0.5em;
+}
+
+.life {
+    color: #009bdb
+}
+
+.is {
+    color: #fac700;
+}
+
+.tech {
+    color: #e63c35;
+}
+
+.ec {
+    color: #67b62d;
+}
+
+.textSplitLoad {
+    display: none;
+}
+
+.split {
+    visibility: hidden;
+}
+
+
+/*droid*/
+
+
+/*keep calm and carry on*/
+
+.typo2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e74c3c;
+    animation: bg-color 10s infinite;
+    -webkit-animation: bg-color 10s infinite;
+}
+@-webkit-keyframes bg-color {
+          0% { background-color: #e74c3c; }
+          20% { background-color: #f1c40f; }
+          40% { background-color: #1abc9c; }
+          60% { background-color: #3498db; }
+          80% { background-color: #9b59b6; }
+          100% { background-color: #e74c3c; }
+    }
+ @keyframes bg-color {
+          0% { background-color: #e74c3c; }
+          20% { background-color: #f1c40f; }
+          40% { background-color: #1abc9c; }
+          60% { background-color: #3498db; }
+          80% { background-color: #9b59b6; }
+          100% { background-color: #e74c3c; }
+}
+
+.typo2 img{
+    width: 8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+}
+
+.typo2 p{
+    text-align: center;
+    font-size: 5em;
+}
+
+.keep{
+    margin-top: 0.2em;
+    letter-spacing: 0.01em;
+    display: block;
+}
+.calm{
+    display: block;
+}
+
+.and{
+    display: block;
+    margin-top: 0.1em;
+    font-size: 0.5em;
+    
+}
+.carry{
+    margin-top: 0.2em;
+    display: block;
+}
+.on{
+    margin-top: 0.1em;
+    display: block;
+}
+/*keep calm and carry on*/
+/*tategaki*/
+.typo3{
+    background-color: #fffAff;
+    background-image: url(../imgs/p0074_l.png);
+    background-position: center center;
+    position-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: black;
+}
+
+.typo3 > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    tansform: translate(-50%, -50%);
+    height: 15em;
+    width: 15em;
+}
+.typo3 h1{
+    font-size: 30em;
+    position: relative;
+    padding-left: 0.5em;
+}
+.bun{
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+    float: right;
+    position: absolute;
+    font-size: 1.4em;
+    line-height: 2em;
+    top: 12rem;
+    padding-left: 1.8rem;
+}
+
+.wa{
+    float: left;
+    position: absolute;
+    font-size: 1.6em;
+    left: 6rem;
+}
+
+.kakko1{
+    letter-spacing: -0.4em;
+}
+.kakko2{
+    letter-spacing: -0.4em;
+}
+.kakko3{
+    letter-spacing: -0.4em;
+}
+/*tategaki*/

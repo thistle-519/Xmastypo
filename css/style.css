@@ -1,0 +1,49 @@
+/*全般セレクタ*/
+
+* {
+    color: #FFFFFF;
+}
+
+body {
+    font-size: 100%;
+}
+
+.title {
+    left: 0;
+    right: 0;
+    text-align: left;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title:before{
+    content: "";
+    background-image: url(../imgs/IMG_8741.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    
+}
+
+.title h1{
+    font-size: 5rem;
+    position: relative;
+    padding-top: 20vh;
+    padding-left: 15vw;
+}
+
+.title a{
+    text-decoration: none;
+}
