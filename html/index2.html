@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>typography</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <div class="title">
+        <h1><font face="Code Light">Typographies</font></h1>
+    </div>
+    <div class="typo1" id="inviewTest"><font face="Droid">
+       <p class="split">and mentors<br>and members<br> and me
+       <br>and <span class="life">Life</span> <span class="is">is</span> <span class="tech">Tech</span><span class="ec">!</span></p>
+      <img src="../imgs/androidihy.png">
+   </font></div>
+   
+    <div class="typo2"><font face="Keep Calm">
+       <img src="../imgs/crown.svg">
+       <p><span class="keep">KEEP</span></p>
+       <p><span class="calm">CALM</span></p>
+       <p><span class="and">AND</span></p>
+       <p><span class="carry">CARRY</span></p>
+       <p><span class="on">ON</span></p>
+   </font></div>
+    <div class="typo3">
+       <img src="../imgs/hinomru.svg">
+        <h1><font face="Weibei SC">和</font></h1>
+        <p><span class="bun"><strong><font face="HannariMincho">調和のとれている様<br>「和<span class="kakko1">」</span>の文化は人と人と<span class="kakko2">の</span>「和<span class="kakko3">」</span>につながる</font></strong></span></p>
+        <p><span class="wa"><font face="Mistral">japanese taditional "wa" style</font></span></p>
+    </div>
+    <script src="../JS/jquery-1.11.2.js"></script>
+    <script src="../JS/jquery.inview-master/jquery.inview.js" type="text/javascript"></script>
+    <script>
+$(function(){
+    var setElm = $('.split'),
+    delaySpeed = 100,
+    fadeSpeed = 0;
+ 
+    setText = setElm.html();
+ 
+    setElm.css({visibility:'visible'}).children().addBack().contents().each(function(){
+        var elmThis = $(this);
+        if (this.nodeType == 3) {
+            var $this = $(this);
+            $this.replaceWith($this.text().replace(/(\S)/g, '<span class="textSplitLoad">$&</span>'));
+        }
+    });
+
+    $(".typo1").on('inview', function() {
+        splitLength = $('.textSplitLoad').length;
+        setElm.find('.textSplitLoad').each(function(i){
+            splitThis = $(this);
+            splitTxt = splitThis.text();
+            splitThis.delay(i*(delaySpeed)).css({display:'inline-block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+        });
+        setTimeout(function(){
+                setElm.html(setText);
+        },splitLength*delaySpeed+fadeSpeed);
+    });
+});
+        
+</script>
+</body>
+</html>
